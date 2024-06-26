@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<!-- to validate the file, go to https://validator.w3.org/ -->
+<html lang="en-us" > <!--Tells what language the page is coded in-->
+<head>
+	<meta charset="utf-8"><!-- this shows what type of encoding will be used-->
+	<meta name="author" content="Breanna Jones">
+	<meta name="description" content="I am making this page to show all of the
+	things I am learning in my web design course.">
+	<title>Paxton's Prompt Challenge</title>
+	<link rel="icon" href="PaxtonPromptChallengeLogoSmall.png" type="image/x-icon">
+		<!--this adds the icon to the top of the page-->
+	<link rel="stylesheet" href="styles.css" type="text/css">
+		<!--this links the css file to the html file-->
+	
+</head>
+<body>
+<!-- the following is a pop-up that appears after clicking a buttin to get instructions-->
+	<div>
+		<img class="photo" rel="image" src="PaxtonPromptChallengeLogo.png" 
+			alt="Paxton's Prompt Challenge logo">
+	</div>
+	
+	<script defer src="script.js"></script>
+	<div>	
+		<button data-modal-target="#modal">Instructions</button>
+		
+		<div class="modal active modal-div" id="modal">
+			<div class="modal-header modal-div">
+				<div class="title modal-div">Instructions</div>
+				<button data-close-button class="close-button">&times;</button>
+			</div>
+			<div class="modal-body modal-div">
+				<ol class="instructions-list">
+					<li class="instructions-list">Select the length of time you want your prompt challenge to last.</li>
+					<li class="instructions-list">Select how many words you want your prompt to be. <br><em class="button-hint">Hint:</em>
+					One word will be a noun, while three words will be an adjective, noun, and verb.</li>
+					<li class="instructions-list">Select your age range. <br> <em class="button-hint">Hint:</em> Younger age groups will have easier to read words than older age groups.</li>
+				</ol>		
+			</div>
+	
+	
+	</div>	
+	<div id="overlay"></div>
+	<h3>How long do you want your challenge to last?</h3>
+	<ul>
+	<!--<li> can be in <ol, ul, or menu>, not on their own-->
+		<li>1 minute</li>
+		<li>5 minutes</li>
+		<li>10 minutes</li>
+		</ul>
+	
+	<h3>Do you want a 1 word or 3 word prompt?</h3>
+	<ul>
+		<li>1</li>
+		<li>3</li>
+		</ul>
+
+	<h3>How old are you?</h3>
+	<ul>
+		<li>5-8</li>
+		<li>9-11</li>
+		<li>11+</li>
+	</ul>
+</body>
+</html>
